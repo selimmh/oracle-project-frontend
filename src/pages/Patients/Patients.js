@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
 function Patients() {
-  // state api call
   const [patients, setPatients] = useState([]);
 
   // get all patients
@@ -82,6 +81,13 @@ function Patients() {
     }
   };
 
+  // patient info states
+  const [nume, setNume] = useState("");
+  const [nrTel, setNrTel] = useState("");
+  const [dataNastere, setDataNastere] = useState("");
+  const [gen, setGen] = useState("");
+  const [email, setEmail] = useState("");
+
   return (
     <div
       style={{
@@ -100,67 +106,56 @@ function Patients() {
           gap: "1rem",
         }}
       >
-        <input type="text" placeholder="nume" id="nume" value={patients.NUME} />
+        <input
+          type="text"
+          placeholder="nume"
+          id="nume"
+          onChange={(e) => setNume(e.target.value)}
+        />
         <input
           type="text"
           placeholder="nrTel"
           id="nrTel"
-          value={patients.NR_TEL}
+          onChange={(e) => setNrTel(e.target.value)}
         />
         <input
           type="text"
           placeholder="dataNastere"
           id="dataNastere"
-          value={patients.DATA_NASTERE}
+          onChange={(e) => setDataNastere(e.target.value)}
         />
-        <input type="text" placeholder="gen" id="gen" value={patients.GEN} />
+        <input
+          type="text"
+          placeholder="gen"
+          id="gen"
+          onChange={(e) => setGen(e.target.value)}
+        />
         <input
           type="text"
           placeholder="email"
           id="email"
-          value={patients.EMAIL}
+          onChange={(e) => setEmail(e.target.value)}
         />
+
         <button
-          onClick={(e) =>
-            addPatient(
-              e.target.parentElement.children[0].value,
-              e.target.parentElement.children[1].value,
-              e.target.parentElement.children[2].value,
-              e.target.parentElement.children[3].value,
-              e.target.parentElement.children[4].value
-            )
-          }
+          onClick={(e) => addPatient(nume, nrTel, dataNastere, gen, email)}
         >
           add
         </button>
-        <button
-          onClick={(e) =>
-            editPatient(
-              e.target.parentElement.children[0].value,
-              e.target.parentElement.children[1].value,
-              e.target.parentElement.children[2].value,
-              e.target.parentElement.children[3].value,
-              e.target.parentElement.children[4].value
-            )
-          }
-        >
-          edit
-        </button>
+        <button onClick={(e) => editPatient()}>update</button>
+        <button onClick={() => {}}>clear</button>
       </div>
-      <br />
       <br />
       {/* Patients list */}
       Patients
       {patients?.[0] ? (
         <ul>
-          {patients.map((patient) => (
-            <li key={patient.PATIENT_ID}>
-              {patient.NUME} {patient.NR_TEL} {patient.DATA_NASTERE}{" "}
-              {patient.GEN} {patient.EMAIL}
-              <button onClick={() => deletePatient(patient.PATIENT_ID)}>
+          {patients.map((mapPacient) => (
+            <li key={mapPacient.PATIENT_ID}>
+              {mapPacient.NUME} {mapPacient.GEN} {mapPacient.EMAIL}
+              <button onClick={() => deletePatient(mapPacient.PATIENT_ID)}>
                 del
               </button>
-              <button onClick={() => setPatients(patient)}>edit</button>
             </li>
           ))}
         </ul>

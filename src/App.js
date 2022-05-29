@@ -18,6 +18,7 @@ function App() {
         flexDirection: "column",
         width: "100vw",
         height: "100vh",
+        fontSize: "2rem",
       }}
     >
       <Router>

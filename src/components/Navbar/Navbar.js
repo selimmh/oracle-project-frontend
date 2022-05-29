@@ -11,6 +11,7 @@ function Navbar() {
           justifyContent: "space-around",
           listStyle: "none",
           cursor: "pointer",
+          borderBottom: "1px solid black",
         }}
       >
         <li onClick={() => navigate("/")}>Main</li>

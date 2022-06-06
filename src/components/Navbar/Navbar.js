@@ -5,21 +5,28 @@ function Navbar() {
   const navigate = useNavigate();
   return (
     <div>
-      <ul
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          listStyle: "none",
-          cursor: "pointer",
-          borderBottom: "1px solid black",
-        }}
-      >
-        <li onClick={() => navigate("/")}>Main</li>
-        <li onClick={() => navigate("/patients")}>Patients</li>
-        <li onClick={() => navigate("/doctors")}>Doctors</li>
-        <li onClick={() => navigate("/appointments")}>Appointments</li>
-        <li onClick={() => navigate("/diagnoses")}>Diagnoses</li>
-        <li onClick={() => navigate("/treatments")}>Treatments</li>
+      <ul className="flex w-full justify-around text-xl bg-blue-300 py-4">
+        <li className="cursor-pointer" onClick={() => navigate("/")}>
+          Main
+        </li>
+        <li className="cursor-pointer" onClick={() => navigate("/patients")}>
+          Patients
+        </li>
+        <li className="cursor-pointer" onClick={() => navigate("/doctors")}>
+          Doctors
+        </li>
+        <li
+          className="cursor-pointer"
+          onClick={() => navigate("/appointments")}
+        >
+          Appointments
+        </li>
+        <li className="cursor-pointer" onClick={() => navigate("/diagnoses")}>
+          Diagnoses
+        </li>
+        <li className="cursor-pointer" onClick={() => navigate("/treatments")}>
+          Treatments
+        </li>
       </ul>
     </div>
   );

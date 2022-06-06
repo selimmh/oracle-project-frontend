@@ -19,6 +19,22 @@ function Patients() {
     getPatients();
   }, []);
 
+  // add patient
+  const addPatient = async (NUME, NR_TEL, DATA_NASTERE, GEN, EMAIL) => {
+    try {
+      await axios.post(`https://api.dintie.yagmyrov.me/patienti/add`, {
+        nume: NUME,
+        nrTel: NR_TEL,
+        dataNastere: DATA_NASTERE,
+        gen: GEN,
+        email: EMAIL,
+      });
+      getPatients();
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   // delete patient
   const deletePatient = async (id) => {
     try {
@@ -29,22 +45,6 @@ function Patients() {
         data: {
           userId: id,
         },
-      });
-      getPatients();
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  // add patient
-  const addPatient = async (NUME, NR_TEL, DATA_NASTERE, GEN, EMAIL) => {
-    try {
-      await axios.post(`https://api.dintie.yagmyrov.me/patienti/add`, {
-        nume: NUME,
-        nrTel: NR_TEL,
-        dataNastere: DATA_NASTERE,
-        gen: GEN,
-        email: EMAIL,
       });
       getPatients();
     } catch (error) {
@@ -99,6 +99,7 @@ function Patients() {
         height: "100%",
       }}
     >
+      {/* Form */}
       <div
         style={{
           display: "flex",
@@ -143,10 +144,10 @@ function Patients() {
           add
         </button>
         <button onClick={(e) => editPatient()}>update</button>
-        <button onClick={() => {}}>clear</button>
+        <button>clear</button>
       </div>
       <br />
-      {/* Patients list */}
+      {/* Patients data */}
       Patients
       {patients?.[0] ? (
         <ul>

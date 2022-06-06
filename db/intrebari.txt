@@ -1,0 +1,9 @@
+2. Ce programari sunt in perioada x-y?
+3. Cate pacienti sunt masculin?
+4. Cate pacienti sunt feminin?
+5. Cate pacienti sunt copii?
+6. Care este cea mai diagnosticata boala?
+7. Care este cel mai folosit tratament?
+8. Ce medic are cei mai multi pacienti?
+
+ani -> data de nastere

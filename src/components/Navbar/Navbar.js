@@ -1,31 +1,60 @@
 import React from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 
 function Navbar() {
   const navigate = useNavigate();
+  const location = useLocation();
+
   return (
     <div>
-      <ul className="flex w-full justify-around text-xl bg-blue-300 py-4">
-        <li className="cursor-pointer" onClick={() => navigate("/")}>
-          Main
-        </li>
-        <li className="cursor-pointer" onClick={() => navigate("/patients")}>
-          Patients
-        </li>
-        <li className="cursor-pointer" onClick={() => navigate("/doctors")}>
-          Doctors
+      <ul className="flex w-full text-xl bg-transparent border select-none">
+        <li
+          className={`py-6 cursor-pointer flex justify-center basis-1/6 transition-all duration-300 ease-in-out active:bg-gray-300 hover:bg-gray-200 ${
+            location.pathname === "/" && `bg-gray-200`
+          }`}
+          onClick={() => navigate("/")}
+        >
+          Acasa
         </li>
         <li
-          className="cursor-pointer"
+          className={`py-6 cursor-pointer flex justify-center basis-1/6 transition-all duration-300 ease-in-out active:bg-gray-300 hover:bg-gray-200 ${
+            location.pathname === "/patients" && `bg-gray-200`
+          }`}
+          onClick={() => navigate("/patients")}
+        >
+          Pacienti
+        </li>
+        <li
+          className={`py-6 cursor-pointer flex justify-center basis-1/6 transition-all duration-300 ease-in-out active:bg-gray-300 hover:bg-gray-200 ${
+            location.pathname === "/doctors" && `bg-gray-200`
+          }`}
+          onClick={() => navigate("/doctors")}
+        >
+          Medici
+        </li>
+        <li
+          className={`py-6 cursor-pointer flex justify-center basis-1/6 transition-all duration-300 ease-in-out active:bg-gray-300 hover:bg-gray-200 ${
+            location.pathname === "/appointments" && `bg-gray-200`
+          }`}
           onClick={() => navigate("/appointments")}
         >
-          Appointments
+          Programari
         </li>
-        <li className="cursor-pointer" onClick={() => navigate("/diagnoses")}>
-          Diagnoses
+        <li
+          className={`py-6 cursor-pointer flex justify-center basis-1/6 transition-all duration-300 ease-in-out active:bg-gray-300 hover:bg-gray-200 ${
+            location.pathname === "/diagnoses" && `bg-gray-200`
+          }`}
+          onClick={() => navigate("/diagnoses")}
+        >
+          Diagnoze
         </li>
-        <li className="cursor-pointer" onClick={() => navigate("/treatments")}>
-          Treatments
+        <li
+          className={`py-6 cursor-pointer flex justify-center basis-1/6 transition-all duration-300 ease-in-out active:bg-gray-300 hover:bg-gray-200 ${
+            location.pathname === "/treatments" && `bg-gray-200`
+          }`}
+          onClick={() => navigate("/treatments")}
+        >
+          Tratamente
         </li>
       </ul>
     </div>

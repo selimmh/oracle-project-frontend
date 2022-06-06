@@ -11,7 +11,7 @@ function Treatments() {
         height: "100%",
       }}
     >
-      Treatments
+      Tratamente
     </div>
   );
 }

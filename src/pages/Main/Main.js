@@ -11,7 +11,7 @@ function Main() {
         height: "100%",
       }}
     >
-      Main
+      Acasa
     </div>
   );
 }

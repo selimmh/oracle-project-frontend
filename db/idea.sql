@@ -30,26 +30,9 @@ create table programare (
     id_medic integer not null,
     data_programare date not null,
     ora_programare time not null,
+    tratament varchar(255) not null,
+    medicament varchar(255) not null,
     primary key (id_programare),
     foreign key (id_pacient) references pacient(id_pacient),
     foreign key (id_medic) references medic(id_medic)
 );
-
--- tabel diagnostic
-create table diagnostic (
-    id_diagnostic integer not null,
-    id_programare integer not null,
-    diagnostic varchar(255) not null,
-    primary key (id_diagnostic),
-    foreign key (id_programare) references programare(id_programare)
-);
-
--- tabel tratament
-create table tratament (
-    id_tratament integer not null,
-    id_programare integer not null,
-    medicament varchar(255) not null,
-    primary key (id_tratament),
-    foreign key (id_programare) references programare(id_programare)
-);
-

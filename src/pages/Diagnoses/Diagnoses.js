@@ -11,7 +11,7 @@ function Diagnoses() {
         height: "100%",
       }}
     >
-      Diagnoses
+      Diagnoze
     </div>
   );
 }

@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 * {
-    @apply text-gray-700
+    @apply text-gray-700;
 }

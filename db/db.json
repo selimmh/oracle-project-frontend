@@ -1,0 +1,286 @@
+{
+  "pacient": [
+    {
+      "id_pacient": 1,
+      "prenume": "Cobbie",
+      "nume": "Bearne",
+      "gen": "M",
+      "dataNastere": "12/03/2017",
+      "adresa": "92696 Pepper Wood Street",
+      "email": "cbearne0@de.vu",
+      "tel": "155-514-7274"
+    },
+    {
+      "id_pacient": 2,
+      "prenume": "Cherilyn",
+      "nume": "Charity",
+      "gen": "F",
+      "dataNastere": "01/24/2015",
+      "adresa": "2 Grasskamp Trail",
+      "email": "ccharity1@jugem.jp",
+      "tel": "475-579-1112"
+    },
+    {
+      "id_pacient": 3,
+      "prenume": "Brit",
+      "nume": "Kopman",
+      "gen": "M",
+      "dataNastere": "03/07/2008",
+      "adresa": "082 Mendota Junction",
+      "email": "bkopman2@sciencedaily.com",
+      "tel": "961-151-5343"
+    },
+    {
+      "id_pacient": 4,
+      "prenume": "Gardie",
+      "nume": "Mc Caughan",
+      "gen": "M",
+      "dataNastere": "07/27/2003",
+      "adresa": "504 Hayes Pass",
+      "email": "gmccaughan3@psu.edu",
+      "tel": "505-825-0003"
+    },
+    {
+      "id_pacient": 5,
+      "prenume": "Edan",
+      "nume": "Garnar",
+      "gen": "M",
+      "dataNastere": "04/02/2015",
+      "adresa": "22 Memorial Street",
+      "email": "egarnar4@skype.com",
+      "tel": "230-703-2171"
+    },
+    {
+      "id_pacient": 6,
+      "prenume": "Ode",
+      "nume": "Sall",
+      "gen": "M",
+      "dataNastere": "08/09/2014",
+      "adresa": "9243 Iowa Point",
+      "email": "osall5@joomla.org",
+      "tel": "136-313-9350"
+    },
+    {
+      "id_pacient": 7,
+      "prenume": "Kaia",
+      "nume": "De Carteret",
+      "gen": "F",
+      "dataNastere": "11/21/2004",
+      "adresa": "59475 Lindbergh Center",
+      "email": "kdecarteret6@berkeley.edu",
+      "tel": "487-706-0692"
+    },
+    {
+      "id_pacient": 8,
+      "prenume": "Lorilee",
+      "nume": "Southerton",
+      "gen": "F",
+      "dataNastere": "07/10/2009",
+      "adresa": "5 Northview Trail",
+      "email": "lsoutherton7@reference.com",
+      "tel": "241-719-0387"
+    },
+    {
+      "id_pacient": 9,
+      "prenume": "Yolande",
+      "nume": "Ewell",
+      "gen": "F",
+      "dataNastere": "12/13/2005",
+      "adresa": "48 Dexter Hill",
+      "email": "yewell8@tiny.cc",
+      "tel": "341-945-0981"
+    },
+    {
+      "id_pacient": 10,
+      "prenume": "Jeffy",
+      "nume": "Shaw",
+      "gen": "M",
+      "dataNastere": "09/12/2010",
+      "adresa": "9853 Manufacturers Alley",
+      "email": "jshaw9@tripadvisor.com",
+      "tel": "861-247-4383"
+    }
+  ],
+  "medic": [
+    {
+      "id_medic": 1,
+      "prenume": "Saxon",
+      "nume": "Fazackerley",
+      "camera": 2,
+      "email": "sfazackerley0@opensource.org",
+      "tel": "447-779-5276"
+    },
+    {
+      "id_medic": 2,
+      "prenume": "Orin",
+      "nume": "Core",
+      "camera": 42,
+      "email": "ocore1@google.cn",
+      "tel": "394-353-1067"
+    },
+    {
+      "id_medic": 3,
+      "prenume": "Jermaine",
+      "nume": "Miell",
+      "camera": 42,
+      "email": "jmiell2@wisc.edu",
+      "tel": "262-459-1642"
+    },
+    {
+      "id_medic": 4,
+      "prenume": "Gunilla",
+      "nume": "Valencia",
+      "camera": 75,
+      "email": "gvalencia3@hostgator.com",
+      "tel": "365-358-7101"
+    },
+    {
+      "id_medic": 5,
+      "prenume": "Kare",
+      "nume": "Pane",
+      "camera": 93,
+      "email": "kpane4@tumblr.com",
+      "tel": "342-344-5781"
+    },
+    {
+      "id_medic": 6,
+      "prenume": "Cathrin",
+      "nume": "Collings",
+      "camera": 30,
+      "email": "ccollings5@yandex.ru",
+      "tel": "209-475-2973"
+    },
+    {
+      "id_medic": 7,
+      "prenume": "Krystyna",
+      "nume": "Dwyer",
+      "camera": 37,
+      "email": "kdwyer6@twitpic.com",
+      "tel": "474-784-2561"
+    },
+    {
+      "id_medic": 8,
+      "prenume": "Ruby",
+      "nume": "Navarro",
+      "camera": 62,
+      "email": "rnavarro7@dyndns.org",
+      "tel": "269-143-3222"
+    },
+    {
+      "id_medic": 9,
+      "prenume": "Adora",
+      "nume": "Sanja",
+      "camera": 31,
+      "email": "asanja8@fastcompany.com",
+      "tel": "750-437-6161"
+    },
+    {
+      "id_medic": 10,
+      "prenume": "Ileana",
+      "nume": "Castelijn",
+      "camera": 68,
+      "email": "icastelijn9@slate.com",
+      "tel": "410-973-5796"
+    },
+    {
+      "id": "11",
+      "prenume": "test",
+      "nume": "test",
+      "camera": "test",
+      "email": "tst",
+      "tel": "test"
+    }
+  ],
+  "programare": [
+    {
+      "id_programare": 1,
+      "id_pacient": 1,
+      "id_medic": 1,
+      "data_programare": "11/26/2021",
+      "ora_programare": "4:34 AM",
+      "diagnostic": "Bucorvus leadbeateri",
+      "tratament": "MENTHOL"
+    },
+    {
+      "id_programare": 2,
+      "id_pacient": 2,
+      "id_medic": 2,
+      "data_programare": "05/09/2022",
+      "ora_programare": "1:13 AM",
+      "diagnostic": "Larus fuliginosus",
+      "tratament": "Pecan Nut"
+    },
+    {
+      "id_programare": 3,
+      "id_pacient": 3,
+      "id_medic": 3,
+      "data_programare": "02/13/2022",
+      "ora_programare": "10:22 AM",
+      "diagnostic": "Spermophilus parryii",
+      "tratament": "benzalkonium chloride"
+    },
+    {
+      "id_programare": 4,
+      "id_pacient": 4,
+      "id_medic": 4,
+      "data_programare": "07/05/2021",
+      "ora_programare": "12:16 AM",
+      "diagnostic": "Colobus guerza",
+      "tratament": "carvedilol phosphate"
+    },
+    {
+      "id_programare": 5,
+      "id_pacient": 5,
+      "id_medic": 5,
+      "data_programare": "05/11/2022",
+      "ora_programare": "9:12 AM",
+      "diagnostic": "Cracticus nigroagularis",
+      "tratament": "ramipril"
+    },
+    {
+      "id_programare": 6,
+      "id_pacient": 6,
+      "id_medic": 6,
+      "data_programare": "07/25/2021",
+      "ora_programare": "7:17 AM",
+      "diagnostic": "Zalophus californicus",
+      "tratament": "Tizanidine"
+    },
+    {
+      "id_programare": 7,
+      "id_pacient": 7,
+      "id_medic": 7,
+      "data_programare": "10/19/2021",
+      "ora_programare": "7:01 PM",
+      "diagnostic": "Procyon lotor",
+      "tratament": "Nicotine Polacrilex"
+    },
+    {
+      "id_programare": 8,
+      "id_pacient": 8,
+      "id_medic": 8,
+      "data_programare": "11/05/2021",
+      "ora_programare": "7:17 PM",
+      "diagnostic": "unavailable",
+      "tratament": "ipratropium bromide and albuterol sulfate"
+    },
+    {
+      "id_programare": 9,
+      "id_pacient": 9,
+      "id_medic": 9,
+      "data_programare": "09/10/2021",
+      "ora_programare": "8:33 AM",
+      "diagnostic": "Cebus apella",
+      "tratament": "DIMENHYDRINATE"
+    },
+    {
+      "id_programare": 10,
+      "id_pacient": 10,
+      "id_medic": 10,
+      "data_programare": "02/21/2022",
+      "ora_programare": "4:59 AM",
+      "diagnostic": "Bassariscus astutus",
+      "tratament": "Oxymorphone Hydrochloride"
+    }
+  ]
+}

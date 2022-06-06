@@ -28,8 +28,8 @@ function AddAppointment() {
   return (
     <form className="flex flex-col py-8 px-4 space-y-2">
       {/* title */}
-      <h1 className="text-lg">Medic nou</h1>
-      {/* prenume */}
+      <h1 className="text-lg">Programare noua</h1>
+      {/* Doctor */}
       <input
         className="px-4 py-2 text-lg border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 transition-all duration-300 ease-in-out"
         type="text"
@@ -39,7 +39,7 @@ function AddAppointment() {
         required
         onChange={(e) => setPrenume(e.target.value)}
       />
-      {/* nume */}
+      {/* Pacient */}
       <input
         className="px-4 py-2 text-lg border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 transition-all duration-300 ease-in-out"
         type="text"
@@ -49,7 +49,7 @@ function AddAppointment() {
         required
         onChange={(e) => setNume(e.target.value)}
       />
-      {/* spec */}
+      {/* Time */}
       <input
         className="px-4 py-2 text-lg border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 transition-all duration-300 ease-in-out"
         type="text"
@@ -59,7 +59,7 @@ function AddAppointment() {
         required
         onChange={(e) => setSpec(e.target.value)}
       />
-      {/* camera */}
+      {/* medicament */}
       <input
         className="px-4 py-2 text-lg border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 transition-all duration-300 ease-in-out"
         type="number"
@@ -69,7 +69,7 @@ function AddAppointment() {
         required
         onChange={(e) => setCamera(e.target.value)}
       />
-      {/* email */}
+      {/* tratament */}
       <input
         className="px-4 py-2 text-lg border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 transition-all duration-300 ease-in-out"
         type="email"
@@ -78,16 +78,6 @@ function AddAppointment() {
         value={email}
         required
         onChange={(e) => setEmail(e.target.value)}
-      />
-      {/* telefon */}
-      <input
-        className="px-4 py-2 text-lg border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 transition-all duration-300 ease-in-out"
-        type="text"
-        placeholder="Telefon"
-        id="tel"
-        value={tel}
-        required
-        onChange={(e) => setTel(e.target.value)}
       />
       {/* submit */}
       <input

@@ -28,7 +28,7 @@ function Doctors() {
   // get doctors
   const getDoctors = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/doctor/get`);
+      const res = await axios.get(`http://localhost:8004/doctor/get`);
       setDoctors(res.data);
     } catch (error) {
       console.error(error);
@@ -41,7 +41,7 @@ function Doctors() {
   // delete doctor
   const deleteDoctor = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/doctor/delete`, {
+      await axios.delete(`http://localhost:8004/doctor/delete`, {
         headers: {
           "Content-Type": "application/json",
         },

@@ -29,7 +29,7 @@ function Patients() {
   // get patients
   const getPatients = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/pacient/get`);
+      const res = await axios.get(`http://localhost:8004/pacient/get`);
       setPatients(res.data);
     } catch (error) {
       console.error(error);
@@ -42,7 +42,7 @@ function Patients() {
   // delete patients
   const deletePatient = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/pacient/delete`, {
+      await axios.delete(`http://localhost:8004/pacient/delete`, {
         headers: {
           "Content-Type": "application/json",
         },

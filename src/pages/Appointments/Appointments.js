@@ -29,7 +29,7 @@ function Appointments() {
   // get appointments
   const getAppointments = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/programare/get`);
+      const res = await axios.get(`http://localhost:8004/programare/get`);
       setAppointments(res.data);
     } catch (error) {
       console.error(error);
@@ -42,7 +42,7 @@ function Appointments() {
   // delete doctor
   const deleteAppointment = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/programare/delete`, {
+      await axios.delete(`http://localhost:8004/programare/delete`, {
         headers: {
           "Content-Type": "application/json",
         },

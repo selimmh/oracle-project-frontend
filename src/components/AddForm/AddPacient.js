@@ -16,7 +16,7 @@ function AddPacient() {
       ) {
         throw new Error("Please fill in all the fields");
       }
-      await axios.post(`http://localhost:8080/pacient/add`, {
+      await axios.post(`http://localhost:8004/pacient/add`, {
         prenume: prenume,
         nume: nume,
         gen: gen,

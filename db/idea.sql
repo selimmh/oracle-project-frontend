@@ -1,25 +1,25 @@
 -- tabel pacient
 create table pacient (
     id_pacient integer not null,
-    prenume varchar(255) not null,
-    nume varchar(255) not null,
-    gen varchar(255) not null,
-    ani integer not null,
-    adresa varchar(255) not null,
-    email varchar(255) not null,
-    tel varchar(255) not null,
+    prenume varchar(20) not null,
+    nume varchar(20) not null,
+    gen varchar(10) not null,
+    dataNastere date not null,
+    adresa varchar(50) not null,
+    email varchar(20) not null,
+    tel varchar(15) not null,
     primary key (id_pacient)
 );
 
 -- tabel medic
 create table medic (
     id_medic integer not null,
-    prenume varchar(255) not null,
-    nume varchar(255) not null,
-    specializare varchar(255) not null,
+    prenume varchar(20) not null,
+    nume varchar(20) not null,
+    specializare varchar(20) not null,
     camera int not null,
-    email varchar(255) not null,
-    tel varchar(255) not null,
+    email varchar(20) not null,
+    tel varchar(15) not null,
     primary key (id_medic)
 );
 
